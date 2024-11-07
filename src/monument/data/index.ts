@@ -1,4 +1,4 @@
-import Monument from "../Monument/Monument";
+import Monument from "../Monument/Monument.js";
 
 const angkorWat = new Monument(
   "Angkor Wat",
