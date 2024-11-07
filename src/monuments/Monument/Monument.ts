@@ -1,3 +1,4 @@
+import crypto from "crypto";
 import { type MonumentLocation, type MonumentStructure } from "./types";
 
 class Monument implements MonumentStructure {
