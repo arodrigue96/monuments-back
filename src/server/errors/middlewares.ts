@@ -1,6 +1,6 @@
 import chalk from "chalk";
 import { type NextFunction, type Request, type Response } from "express";
-import type ServerError from "./ServerError/ServerError.js";
+import ServerError from "./ServerError/ServerError.js";
 
 export const handleGeneralError = (
   error: ServerError,
@@ -14,4 +14,14 @@ export const handleGeneralError = (
   res.status(error.statusCode ?? 500).json({
     error: error.statusCode ? error.message : "Server error",
   });
+};
+
+export const handlePathError = (
+  _req: Request,
+  _res: Response,
+  next: NextFunction,
+): void => {
+  const error = new ServerError(404, "Endpoint not found");
+
+  next(error);
 };
