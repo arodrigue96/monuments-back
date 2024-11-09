@@ -8,7 +8,6 @@ class MonumentsController implements MonumentsControllerStructure {
   get = (_req: Request, res: Response): void => {
     const statusCode = 200;
 
-    res.header("Access-Control-Allow-Origin", "*");
     res.status(statusCode).json({ monuments: this.monuments });
   };
 }
