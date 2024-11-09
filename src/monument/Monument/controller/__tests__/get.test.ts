@@ -17,6 +17,7 @@ describe("Given the method get of MonumentController class", () => {
     const res: Partial<Response> = {
       status: jest.fn().mockReturnThis(),
       json: jest.fn(),
+      header: jest.fn(),
     };
 
     const monumentsController = new MonumentsController(monuments);
@@ -27,7 +28,7 @@ describe("Given the method get of MonumentController class", () => {
       expect(res.status).toHaveBeenCalledWith(200);
     });
 
-    test("THen it should call json method with the monument Coliseo", () => {
+    test("Then it should call json method with the monument Coliseo", () => {
       monumentsController.get(req as Request, res as Response);
 
       expect(res.json).toHaveBeenCalledWith({ monuments });
