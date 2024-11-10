@@ -12,6 +12,8 @@ app.use(morgan("dev"));
 
 app.use("/monuments", monumentsRouter);
 
+app.use(express.json());
+
 app.use(handlePathError);
 
 app.use(handleGeneralError);
