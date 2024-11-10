@@ -3,7 +3,7 @@ import Monument from "../Monument/Monument.js";
 const angkorWat = new Monument(
   "Angkor Wat",
   "Angkor Wat is a stunning temple complex in Siem Reap, Cambodia, built in the early 12th century. Originally dedicated to the Hindu god Vishnu, it is the largest religious monument in the world, covering 162.6 hectares. The temple's design symbolizes Mount Meru, with intricate bas-reliefs depicting mythological scenes. Transitioning to a Buddhist site over the centuries, Angkor Wat is now a UNESCO World Heritage Site and a symbol of Cambodian culture, attracting millions of visitors each year.",
-  "https://elviajedejein.com/wp-content/uploads/2024/07/templos_angkor_megaguia.jpg",
+  "https://f7c7358c.rocketcdn.me/wp-content/uploads/2019/08/Cambodia-Angkor-Wat-Temple-Siem-Reap-690x400.jpg",
   {
     country: "Cambodja",
     city: "Siem Reap",
