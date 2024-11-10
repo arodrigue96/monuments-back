@@ -4,7 +4,7 @@ import ServerError from "../ServerError/ServerError";
 
 describe("Given the handlePathError function", () => {
   describe("When it receives a request with an inexisting endpoint", () => {
-    test("Then it should call next function with an error", () => {
+    test("Then it should call next function with an error status code 404 and message 'Endpoint not found'", () => {
       const expectedStatusCode = 404;
       const message = "Endpoint not found";
 

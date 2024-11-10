@@ -14,7 +14,7 @@ describe("Given the handleGeneralError function", () => {
   };
   const next: NextFunction = jest.fn();
 
-  describe("When it receives a request with an inexisting endpoint", () => {
+  describe("When it receives a request from handlePathError middleware with a error", () => {
     const error = new ServerError(404, "Endpoint not found");
     const expectedStatusCode = 404;
     const expectedMessage = { error: "Endpoint not found" };
